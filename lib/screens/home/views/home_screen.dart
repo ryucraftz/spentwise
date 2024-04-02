@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:spentwise/screens/add_expense/views/add_expensse.dart';
 import 'package:spentwise/screens/home/views/main_screen.dart';
 import 'package:spentwise/screens/stats/stats.dart';
 
@@ -13,7 +14,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   int index = 0;
   late Color selectedItem = Colors.blue;
   Color unselectedItem = Colors.grey;
@@ -35,15 +35,15 @@ class _HomeScreenState extends State<HomeScreen> {
             showSelectedLabels: false,
             showUnselectedLabels: false,
             elevation: 3,
-            items:  [
+            items: [
               BottomNavigationBarItem(
                 icon: Icon(CupertinoIcons.home,
-                color: index == 0 ? selectedItem : unselectedItem),
+                    color: index == 0 ? selectedItem : unselectedItem),
                 label: 'Home',
               ),
               BottomNavigationBarItem(
                 icon: Icon(CupertinoIcons.graph_square_fill,
-                color: index == 1 ? selectedItem : unselectedItem),
+                    color: index == 1 ? selectedItem : unselectedItem),
                 label: 'Stats',
               ),
             ],
@@ -51,7 +51,14 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute<void>(
+                builder: (BuildContext context) => const AddExpense(),
+                ),
+            );
+          },
           shape: const CircleBorder(),
           child: Container(
             width: 60,
