@@ -95,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 if(newExpense != null){
                   setState(() {
-                    state.expenses.insert(0,  newExpense);
+                    state.expenses.add(newExpense);
                   });
                 }
               },

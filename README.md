@@ -1,16 +1,43 @@
-# spentwise
+# SpentWise
+![Demo](./assets/phone3.png)
 
-A new Flutter project.
+## Stack
 
-## Getting Started
+- [Flutter](https://flutter.dev/) - A UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.
+- [Firebase](https://firebase.google.com/) - A platform developed by Google for creating mobile and web applications.
+- [Bloc](https://bloclibrary.dev/) - A predictable state management library that helps implement the BLoC (Business Logic Component) design pattern.
+- [fl_chart](https://pub.dev/packages/fl_chart) - A library for Flutter that provides beautiful and interactive charts for data visualization.
+- Custom Icons - Utilized for enhancing the user interface and experience.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Project structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+spentwise/
+├── ios/
+├── lib/
+│   ├── blocs/
+│   │   └── ...
+│   ├── data/
+│   │   ├── data.dart
+│   │   └── ...
+│   ├── screens/
+│   │   └── ...
+│   └── views/
+│       └── ...
+├── test/
+├── web/
+├── windows/
+├── .dart_tool/
+├── .packages
+├── .pubspec.lock
+├── .pubspec.yaml
+└── ...
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+
+## License
+
+MIT License.
+
+---
