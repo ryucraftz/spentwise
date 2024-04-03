@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "566821257691",
+    "project_id": "spentwise-74be2",
+    "storage_bucket": "spentwise-74be2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566821257691:android:bee3458be02aae026767fe",
+        "android_client_info": {
+          "package_name": "com.example.spentwise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3_gOjfQj9vPdoRz276R8esxce4ipzYvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
